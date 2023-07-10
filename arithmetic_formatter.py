@@ -35,3 +35,8 @@ def arithmetic_arranger(problems, show_answers=False):
      else:
       answer = str(int(operand1) - int(operand2))
      answer_line.append(answer.rjust(width))
+     
+    arranged_problems.append('    '.join(top_line))
+    arranged_problems.append('    '.join(bottom_line))
+    arranged_problems.append('    '.join(separator_line))
+
