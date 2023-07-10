@@ -39,4 +39,10 @@ def arithmetic_arranger(problems, show_answers=False):
     arranged_problems.append('    '.join(top_line))
     arranged_problems.append('    '.join(bottom_line))
     arranged_problems.append('    '.join(separator_line))
+    
+    if show_answers:
+     arranged_problems.append('    '.join(answer_line))
+
+    return '\n'.join(arranged_problems)
+
 
