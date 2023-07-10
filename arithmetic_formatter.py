@@ -28,3 +28,10 @@ def arithmetic_arranger(problems, show_answers=False):
     top_line.append(operand1.rjust(width))
     bottom_line.append(operator + operand2.rjust(width - 1))
     separator_line.append('-' * width)
+
+    if show_answers:
+     if operator == '+':
+      answer = str(int(operand1) + int(operand2))
+     else:
+      answer = str(int(operand1) - int(operand2))
+     answer_line.append(answer.rjust(width))
